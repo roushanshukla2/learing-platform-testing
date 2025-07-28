@@ -7011,9 +7011,6 @@ HAVING COUNT(*) > 5;</code></pre>`
         },
         {
           title: "🟡 Intermediate SQL Interview Questions",
-          content: `<div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mt-4">
-<h4 class="text-yellow-800 font-semibold text-lg">For developers with 1-3 years of experience</h4>
-</div>`
         },
         {
           title: "📌 6. What is a Subquery?",
@@ -7084,9 +7081,7 @@ WHERE status = 'active';</code></pre>`
         },
         {
           title: "🔴 Advanced SQL Interview Questions",
-          content: `<div class="bg-red-50 border-l-4 border-red-400 p-4 mt-4">
-<h4 class="text-red-800 font-semibold text-lg">For senior developers and database specialists</h4>
-</div>`
+          
         },
         {
           title: "📌 11. What is a Transaction?",

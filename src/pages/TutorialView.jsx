@@ -106,9 +106,15 @@ const TutorialView = () => {
 
       <div className="flex flex-1">
         {/* Sidebar - Always visible on desktop, hidden on mobile */}
-        <div className="hidden lg:flex lg:flex-col lg:w-80 bg-white shadow-lg">
+        <div
+          className="hidden lg:flex lg:flex-col bg-white shadow-lg sticky top-0"
+          style={{ height: '100vh', width: '20vw', minWidth: 240, maxWidth: 400 }}
+        >
           {/* Sidebar Header */}
-          <div className="p-4 sm:p-6 border-b bg-gradient-to-r from-blue-600 to-purple-600 text-white flex-shrink-0">
+          <div
+            className="p-4 sm:p-6 border-b bg-gradient-to-r from-blue-600 to-purple-600 text-white flex-shrink-0"
+            style={{ height: '35vh', minHeight: 120 }}
+          >
             <button
               onClick={() => navigate('/')}
               className="flex items-center text-white/80 hover:text-white mb-4 text-sm"
@@ -133,7 +139,14 @@ const TutorialView = () => {
           </div>
 
           {/* Table of Contents */}
-          <div className="flex-1 overflow-y-auto p-3 sm:p-4">
+          <div
+            className="p-3 sm:p-4"
+            style={{
+              height: '80vh',
+              overflowY: 'auto',
+              flex: '1 1 0%',
+            }}
+          >
             <h3 className="font-semibold text-gray-900 mb-4 flex items-center text-sm sm:text-base">
               <BookOpen className="h-4 w-4 mr-2" />
               Table of Contents
